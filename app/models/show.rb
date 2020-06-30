@@ -3,6 +3,6 @@ class Show < ActiveRecord::Base
   has_many :characters
   
   def actor_list
-    self.charactor
+    self.charactors.collect(actor)
   end
 end
