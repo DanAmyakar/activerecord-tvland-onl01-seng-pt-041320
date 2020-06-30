@@ -1,4 +1,4 @@
-class AGenreDaySeason < ActiveRecord::Migrate
+class AGenreDaySeason < ActiveRecord::Migrate[5.1]
   def change
     add_column :shows, :genre, :sting
     add_column :shows, :day, :sting
