@@ -1,6 +1,6 @@
 class Show < ActiveRecord::Base
-  belongs_to :networks
-  has_many :characters
+  belongs_to :network
+  has_many :character
   
   def charater_list
     self.character.collect(name)
